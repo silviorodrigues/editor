@@ -104,7 +104,7 @@ class App
     canvas
 
   getName: (forceUpdate) ->
-    name = (not forceUpdate and localStorage["name"]) || prompt "What's your name?"
+    name = ''
     localStorage["name"] = name
     @$nameTag.text(name) if name
 
